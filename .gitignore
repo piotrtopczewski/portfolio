@@ -1,0 +1,9 @@
+# MkDocs
+site/
+
+# venv (skrypt publish tworzy .venv lokalnie)
+.venv/
+
+# sync — opcjonalnie możesz ignorować wygenerowane pliki (zwykle commituj docs/ albo nie)
+# docs/index.md
+# docs/instrukcja.md

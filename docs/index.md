@@ -1,0 +1,73 @@
+# Portfolio
+
+Repozytorium zbiorcze wybranych realizacji — produkty [QUADRACOGNI](https://quadracogni.ai) oraz projekty własne dla klientów.
+
+---
+
+## Produkty QUADRACOGNI (quadracogni.ai)
+
+### Praxis Chat — inteligentny chatbot wiedzy firmowej
+
+**Opis**  
+Nowoczesne rozwiązanie AI do zarządzania wiedzą z dokumentów firmowych. Chatbot rozumie kontekst pytań i dostarcza precyzyjne odpowiedzi z wewnętrznych zasobów — m.in. PDF, DOCX, HTML oraz wideo z automatyczną transkrypcją. System wykorzystuje **RAG** (wyszukiwanie semantyczne + generowanie odpowiedzi); każda odpowiedź zawiera **odniesienia do źródeł** (strony, timestampy wideo, transkrypcje). Interfejs web (**React**), API (**FastAPI**, JWT, uprawnienia), wielojęzyczność (PL/EN/DE), branding, eksport do PDF, panel administracyjny, integracje z repozytoriami (np. Google Drive, DigitalOcean Spaces) i automatyczne indeksowanie.
+
+**Link:** [Praxis Chat — strona produktu](https://quadracogni.ai/praxis-chat)
+
+---
+
+### Praxis KSeF — czat AI o Krajowym Systemie e-Faktur
+
+**Opis**  
+Specjalistyczny asystent oparty na **wyłącznie oficjalnych materiałach** Ministerstwa Finansów (akty, rozporządzenia, instrukcje, szkolenia). Odpowiedzi z pełną transparentnością źródeł, mniejsze ryzyko halucynacji dzięki zamkniętemu **RAG** na zweryfikowanej bazie MF. Skierowany do przedsiębiorców i biur rachunkowych pracujących na co dzień z KSeF.
+
+**Link:** [Praxis KSeF](https://quadracogni.ai/praxis-chat/ksef) · [Aplikacja](https://ksefall.quadracogni.ai/)
+
+---
+
+### Pulse CV — optymalizacja CV z wykorzystaniem AI
+
+**Opis**  
+Platforma **PULSEcv**: import CV (m.in. PDF), analiza ogłoszenia o pracę, **wskaźnik dopasowania**, **analiza luk kompetencyjnych (gap analysis)**, generacja ulepszonej wersji CV pod konkretną rolę; eksport **PDF, DOCX, HTML**, wielojęzyczność. Dla B2B: **REST API (FastAPI)**, JWT, rate limiting, webhooks, dokumentacja OpenAPI, wdrożenia Docker, scenariusze enterprise i white-label.
+
+**Link:** [Pulse CV — strona produktu](https://quadracogni.ai/pulse-cv) · [Aplikacja](https://pulsecv.quadracogni.ai/)
+
+---
+
+## Master Data — rozliczenie godzin pracy w projekcie
+
+**Opis**  
+Rozliczanie godzin pracy w ramach projektów i klientów w firmie software’owej. Integracja danych z kilku systemów rejestracji czasu dla projektów i klientów. Rozliczenia: **fixed price**, abonament, **time & material**. Wielowalutowość w rozliczaniu kosztów/przychodów pod kątem klientów, różne formy zatrudnienia deweloperów i pozostałych pracowników. Eksport danych (CSV, XLSX). Moduły analizy i wizualizacji danych. Moduł prognoz oparty na trendach (**scipy**). Wdrożenie: **GitHub**, **Docker**, **GCP**.
+
+**Umiejętności:** Python, Streamlit, pandas, plotly, scipy, Excel, Docker, GCP  
+
+**Rola:** wdrożenie, rozwój
+
+Firma : [ArdentCode sp z o.o.](https://ardentcode.com/)
+
+---
+
+## Knowledge Seeker — transkrypcja i semantyczne przeszukiwanie
+
+**Opis**  
+Narzędzie do transkrypcji materiałów (od tekstu po wideo) oraz **wyszukiwania semantycznego** w tych materiałach (zastosowanie : kurs "Od zera do AI" [Imprv.ai](https://imprv.ai/)+[GotoIT](https://gotoit.pl/)). Transkrypcja: pipeline oparty o **Dramatiq** i **Redis**. Modele **OpenAI**. Wyszukiwanie: **RAG**, embeddingi (**LangChain**), baza wektorowa **Qdrant**. Monitorowanie jakości odpowiedzi: **Langfuse**. System w kontenerach **Docker** na platformie **DigitalOcean** (m.in. **S3**).
+
+**Umiejętności:** Python, Streamlit, LangChain, Langfuse, RAG, Redis, Qdrant, DigitalOcean (S3), Dramatiq, ETL, pipeline, OpenAI, Git, Docker  
+
+**Rola:** wdrożenie, rozwój
+
+---
+
+## Employee Payslipper — paski płac
+
+**Opis** (w ramach pracy zespołowej — projektowanie i współtworzenie)  
+System do przygotowania i dystrybucji list płac: automatyczne przetwarzanie danych z zaszyfrowanych plików **Excel**, generowanie spersonalizowanych **PDF** z ochroną hasłem (PESEL), masowa wysyłka e-mail do pracowników z obsługą załączników i personalizacją treści. Logowanie zdarzeń, konfigurowalność procesu, interfejs **HTML** + **Bootstrap**, uruchomienie jako **.exe** bez instalacji Pythona po stronie użytkownika końcowego.
+
+**Umiejętności:** Python (pandas, openpyxl, fpdf, PyPDF2, smtplib, Flask), HTML, Bootstrap, SMTP, MIME  
+
+**Rola:** wdrożenie (współautor)
+
+---
+
+## Kontakt
+
+piotr.topczewski@quadracogni.com

@@ -1,0 +1,64 @@
+# MkDocs — statyczna strona z portfolio
+# Uruchomienie: .\scripts\publish-mkdocs.ps1  (sync README → docs + build)
+# Podgląd lokalny: .\scripts\publish-mkdocs.ps1 -Serve
+
+site_name: Portfolio
+site_description: Wybrane realizacje — produkty QUADRACOGNI i projekty.
+site_author: Piotr Topczewski
+
+# Po włączeniu GitHub Pages ustaw dokładny URL (dla poprawnych linków kanonicznych):
+# site_url: https://piotrtopczewski.github.io/portfolio/
+
+repo_name: piotrtopczewski/portfolio
+repo_url: https://github.com/piotrtopczewski/portfolio
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  language: pl
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Jasny motyw
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Ciemny motyw
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - toc.follow
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+
+nav:
+  - Strona główna: index.md
+
+plugins:
+  - search:
+      lang:
+        - pl
+        - en
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/piotrtopczewski/portfolio
+
+copyright: Copyright &copy; Piotr Topczewski
